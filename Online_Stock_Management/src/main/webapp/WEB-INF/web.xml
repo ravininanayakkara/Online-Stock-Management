@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Online_Stock_Management</display-name>
+  
+  <servlet>
+    <servlet-name>deletestockervlet</servlet-name>
+    <servlet-class>com.servlet.deletestockervlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>updatestockservlet</servlet-name>
+    <servlet-class>com.servlet.updatestockservlet</servlet-class>
+  </servlet>
+      
+  <servlet>
+    <servlet-name>displaystockservlet</servlet-name>
+    <servlet-class>com.servlet.displaystockservlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>addstockservlet</servlet-name>
+    <servlet-class>com.servlet.addstockservlet</servlet-class>
+    
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>displaystockservlet</servlet-name>
+		<url-pattern>/displaystockservlet</url-pattern>
+	</servlet-mapping>
+  
+   
+  <welcome-file-list>
+   
+    <welcome-file>stock.jsp</welcome-file>
+   <welcome-file>DisplayStock.jsp</welcome-file>
+  
+    
+  </welcome-file-list>
+</web-app>
+</element>
